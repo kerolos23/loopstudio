@@ -1,0 +1,60 @@
+@use "../helper/var" as *;
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9em;
+    margin-bottom: 9em;
+    .glr-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 9em;
+        padding-right: 9em;
+        margin-bottom: 2em;
+        width: 100%;
+        height: 4em;
+        h2 {
+            @extend %title;
+            font-weight: 400;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: .3em;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            letter-spacing: .1em;
+            border: 2px solid $black;
+        }
+    }
+    .images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: calc(16em * 5);
+        margin-bottom: 1em;
+        gap: 1em;
+        .image {
+            position: relative;
+            img{
+                width: 16em;
+            }
+            .img-title {
+                position: absolute;
+                color: #fff;
+                width: 100%;
+                background: linear-gradient(0deg, black, transparent);
+                padding: 2em;
+                left: 0;
+                bottom: 0;
+                h2 {
+                    font-weight: 300;
+                    font-family: $josefin-sans-font;
+                }
+            }
+        }
+    }
+}

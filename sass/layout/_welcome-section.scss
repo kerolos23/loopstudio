@@ -1,0 +1,29 @@
+@use "../helper/var" as *;
+
+.welcome {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100dvb;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .wlc-title{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #fff;
+        padding: 1.2em;
+        top: 40%;
+        left: 9em;
+        font-weight: 400;
+        h2 {
+            @extend %title;
+            font-weight: 200;
+            font-size: 4em;
+            color: $white;
+        }
+    }
+}

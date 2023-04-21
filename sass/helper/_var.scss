@@ -1,0 +1,15 @@
+// The main colors of the site
+$white: #fff;
+$black: #000;
+$dark-gray: #8c8c8c;
+$very-dark-gray: #696969;
+
+// fonts 
+$josefin-sans-font: 'Josefin Sans', sans-serif;
+$alata-font: 'Alata', sans-serif;
+
+%title {
+    letter-spacing: .1em;
+    line-height: 1em;
+    font-family: $josefin-sans-font;
+}
